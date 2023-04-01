@@ -1,0 +1,532 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.head-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid grey ;
+    position: sticky;
+    top:0px;
+    left: 0px;
+    right: 0px;
+   z-index: 100;
+
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: -2px 44px;
+    padding: 4px 4px;
+}
+
+.nav-bar a{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.search{
+    margin: 0px 56px;
+
+}
+.search i {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+#bar{
+    visibility: hidden;
+    cursor: none;
+}
+
+@media only screen and (max-width:1185px){
+    .nav-bar{
+        visibility: hidden;
+    }
+    #bar{
+        visibility: visible;
+        cursor: pointer;
+        font-size: 45px;
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
+
+
+
+
+.nav-bar a:hover{
+    color: grey;
+}
+/* navvigation section style complete */
+
+.second-section{
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(bg.avif);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main-content{
+    position: absolute;
+    color: white;
+    left: 140px;
+    top: 130px;
+}
+
+.title{
+    font-size: 48px;
+    padding: 21px 0px;
+    text-transform: uppercase;
+    padding-top:83px;
+}
+.main-content p {
+    font-size: 23px;
+    margin: 10px 0px;
+    padding: 0px 0px;
+}
+
+.btn{
+    font-size: 23px;
+   background-color: brown;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color:grey;
+}
+
+/* second Section Started */
+
+.about{
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    margin-bottom: 0px;
+}
+
+.about-title{
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 40px;
+
+
+}
+.ab-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 10px; 
+ }
+
+.ab-content img{
+    width: 500px;
+    height: 357px;
+    object-fit: cover;
+   
+}
+
+.second-sec-content{
+    background-color:rgb(51, 48, 48);
+    box-shadow: 2px 20x 3px white;
+    height: 357px;
+    width: 500px;
+    text-align: center;
+    padding: 12px 18px ;
+
+ 
+}
+
+.second-sec-content h2 {
+    font-size: 30px;
+    font-weight: 100px;
+
+}
+
+.second-sec-content  p {
+    color: white;
+    margin: -5px 10px;
+    padding: 8px 10px;
+}
+
+.about-btn {
+    background-color: rgb(216, 38, 38);
+    padding: 5px;
+    margin: 10px 0px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.about-btn:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+/* menu style stsrted */
+.menu{
+    background-color:black;
+    color: white;
+}
+#menu-span{
+    color: brown;
+}
+
+.menu h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0px;
+}
+.item{
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 360px;
+    height: 322px;
+    margin: 10px;
+    text-align: center;
+    padding: 47px 0px;
+
+    
+}
+
+.item img{
+    text-align: center;
+    width: 68px;
+    height: 68px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin: 10px 0px;
+
+}
+
+.item h2{
+    margin: 10px 0px;
+}
+.item h3{
+    margin: 10px 0px;
+}
+
+#discount{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.oder-btn{
+    background-color: brown;
+    padding: 8px;
+    font-size: 25px;
+    color: white;
+    border-radius: 15px;
+}
+.oder-btn:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+.item:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition-duration: 0.8s;
+}
+
+.all-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+/* menu style end */
+
+.product-section{
+    background-color: black;
+    color: white;
+    padding: 30px 0px;
+    
+}
+
+.product-section h1 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#pro-span{
+    color: brown;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px ;
+    margin: 10px 0px;
+
+
+    
+
+}
+
+.product-item{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    height:390px;
+    width: 350px;
+    text-align: center;
+
+
+}
+
+.product-item:hover{
+    background-color: rgb(51, 48, 48);
+    transition-duration: 0.8s;
+}
+
+.product-item span{
+    color: whitesmoke;
+}
+
+.icon{
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    margin: 8px;
+    padding: 2px;
+
+}
+
+.icon i {
+    border: 1px solid grey;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+.icon i:hover{
+    background-color: brown;
+}
+
+.product-item img{
+    width: 135px;
+    height: 190px;
+}
+
+.product-item h3{
+    padding: 3px 0px;
+    font-size: 20px;
+}
+.product-item h5{
+    font-size: 19px;
+}
+
+
+.product-item span{
+    color: brown;
+}
+
+
+/* Review section css started */
+.review-section{
+    background-color: black;
+    color: white;
+}
+
+.all-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.review-section h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 0px;
+
+}
+
+.review{
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 390px;
+    height: 385px;
+    margin: 10px;
+    padding: 10px;
+}
+.review img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin: 14px;
+}
+
+.review i{
+    font-size: 30px;
+    padding: 10px 0px;
+    color: brown;
+
+}
+
+.rating{
+    color: brown;
+}
+
+
+
+/* contact section strated */
+
+.contact-section{
+    background-color: black;
+    color: white;
+}
+.contact-section h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.map{
+    width: 380px;
+    height: 365px;
+    background-color: red;
+  
+}
+
+.info img{
+    width: 380px;
+    height: 365px;
+}
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   padding: 20px 0px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    width: 380px;
+    height: 365px;
+}
+
+.form input{
+    margin: 10px 20px;
+    padding: 10px 25px;
+    height: 45px;
+}
+#cont-btn{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.blog-section{
+    background-color: black;
+    color: white;
+}
+
+
+.blog-section h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.blog-item img{
+    width: 387px;
+    height: 320px;
+}
+
+.blog-item{
+    border: 2px solid grey;
+    width: 390px;
+    height: 500px;
+    margin: 10px 10px;
+    padding-left: 10px 10px;
+    text-align: center;
+}
+
+.blog-item h3{
+    color: brown;
+    line-height: 30px;
+}
+
+#blog-btn{
+    background-color: brown;
+    color: white;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+#blog-btn:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+.blog-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section{
+    background-color: rgb(35, 33, 33);
+    color: white;
+    text-align: center;
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.footer-icon i{
+    font-size: 28px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: brown;
+}
+
+#developer{
+    color: brown;
+}
